@@ -76,6 +76,7 @@ class _LoginScreenState extends State<LoginScreen>
               padding: const EdgeInsets.all(36.0),
               child: Form(
                 key: _formkey,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,

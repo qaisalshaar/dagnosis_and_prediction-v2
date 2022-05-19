@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dagnosis_and_prediction-v2",
+            "cwd": "dagnosis_and_prediction-v2",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "dagnosis_and_prediction-v2 (profile mode)",
+            "cwd": "dagnosis_and_prediction-v2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "dagnosis_and_prediction-v2 (release mode)",
+            "cwd": "dagnosis_and_prediction-v2",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

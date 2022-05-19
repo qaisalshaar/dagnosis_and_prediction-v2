@@ -71,8 +71,9 @@ Widget TextEmailField({
         labelText: lableText,
         // border: InputBorder.none,
         border: OutlineInputBorder(),
-        errorBorder: OutlineInputBorder(
-            borderSide: new BorderSide(color: errorStylecolor, width: 3)),
+        // errorBorder: OutlineInputBorder(
+        //     borderSide: new BorderSide(color: errorStylecolor, width: 3)),
+
         focusedErrorBorder: new OutlineInputBorder(
           borderSide: new BorderSide(color: errorStylecolor, width: 5),
         ),
@@ -109,8 +110,8 @@ Widget TextPasswordField({
         if (value!.isEmpty) {
           return 'Password must be not Empty';
         }
-        if (!RegExp(r'^.{6,}$').hasMatch(value)) {
-          return ('Enter valid pass (Min. 6 Char)');
+        if (!RegExp(r'^.{3,}$').hasMatch(value)) {
+          return ('Enter valid pass (Min. 3 Char)');
           // return validationemailformat;
         }
         return null;

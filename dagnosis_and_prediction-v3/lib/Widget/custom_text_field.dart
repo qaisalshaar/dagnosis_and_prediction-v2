@@ -34,8 +34,8 @@ class CustomTextField extends StatelessWidget {
           // Check if Email Address wright Correctly
           return 'Please Enter Correct Email Address';
           // check Password
-        } else if (textform.contains('password') && value!.length < 6) {
-          return 'Password at least contains 6 character';
+        } else if (textform.contains('password') && value!.length < 3) {
+          return 'Password at least contains 3 character';
         }
 
         return null;
@@ -47,6 +47,12 @@ class CustomTextField extends StatelessWidget {
       textInputAction: TextInputAction.next,
       obscureText: visibility,
       decoration: InputDecoration(
+        errorStyle: TextStyle(
+            color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold),
+        errorBorder: OutlineInputBorder(
+            borderSide: new BorderSide(color: Colors.red, width: 3)),
+        focusedErrorBorder: new OutlineInputBorder(
+            borderSide: new BorderSide(color: Colors.red, width: 5)),
         prefixIcon: Icon(icon),
         contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         hintText: textform,
